@@ -12,6 +12,9 @@
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol))
 
+;; Typed text replaces the selection if the selection is active
+(delete-selection-mode 1)
+
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
 
