@@ -29,4 +29,12 @@ Emacs has decent support for CSS, HTML, JS, and many other file types out of the
 
 ## Supporting Python
 
-...
+[Elpy](https://elpy.readthedocs.org/en/latest/)
+
+## Better defaults
+
+[Better defaults](https://github.com/technomancy/better-defaults)
+
+## Web Mode
+
+[Web Mode](http://web-mode.org/)

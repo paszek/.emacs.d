@@ -141,6 +141,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; Web frameworks
+(load "setup-web.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
