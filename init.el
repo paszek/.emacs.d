@@ -35,7 +35,8 @@
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
 (defvar my-packages
-  '(;; makes handling lisp expressions much, much easier
+  '(
+	;; makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
 
@@ -71,6 +72,11 @@
 
     ;; git integration
     magit
+	
+	auto-complete
+	
+	;;autonomous emacs major-mode for editing web templates.
+	web-mode
 	
 	;;Elpy is the Emacs Python Development Environment
 	elpy))
@@ -130,6 +136,7 @@
 
 ;; Hard-to-categorize customizations
 (load "misc.el")
+(load "better-defaults.el")
 
 ;; For editing lisps
 (load "elisp-editing.el")
