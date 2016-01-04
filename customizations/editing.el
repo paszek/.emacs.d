@@ -1,5 +1,29 @@
 ;; Customizations relating to editing a buffer.
 
+;; newline-without-break-of-line
+(defun newline-without-break-of-line ()
+  "1. move to end of the line.
+  2. insert newline with index"
+
+  (interactive)
+  (let ((oldpos (point)))
+    (end-of-line)
+    (newline-and-indent)))
+
+(global-set-key (kbd "<C-return>") 'newline-without-break-of-line)
+
+;; newline-before-without-break-of-line
+(defun newline-before-without-break-of-line ()
+  "1. move to end of the line.
+  2. insert newline with index"
+
+  (interactive)
+  (let ((oldpos (point)))
+    (end-of-line)
+    (newline-and-indent)))
+
+(global-set-key (kbd "<C-S-return>") 'newline-without-break-of-line)
+
 ;; Key binding to use "hippie expand" for text autocompletion
 ;; http://www.emacswiki.org/emacs/HippieExpand
 (global-set-key (kbd "M-/") 'hippie-expand)
